@@ -20,6 +20,12 @@ namespace proyecto2
             Console.WriteLine($"La potencia de {num1} elevado a {potencia} es: {result}");
 
         }
+        static void ModificarValor(int n)
+        {
+            n = n + 1;
+            Console.WriteLine($"Dentro del Metodo: {n}");
+        }
+
         static void Main(string[] args)
         {
             int x = 12, y = 23;
@@ -28,6 +34,10 @@ namespace proyecto2
             ImprimirSumar(y, x); //y, x (Argumentos Actuales)
             ImprimirSumar(1000, -1); // (Argumentos Literales)
             MostrarPotenciaX(12, 3);
+            int edad = 20;
+            Console.WriteLine($"Antes del metodo: {edad}");
+            ModificarValor(edad);
+            Console.WriteLine($"Despues del Metodo: {edad}");
             
         }
     }
