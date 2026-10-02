@@ -4,8 +4,8 @@ class Program
 {
     static void Main()
     {
-        // Puedes cambiar este valor según el número dado en clase
-        const int totalEstudiantes = 5;
+        // Total de estudiantes modificado a 20
+        const int totalEstudiantes = 20; 
 
         // 1. Declaración de arreglos estáticos paralelos
         string[] nombres = new string[totalEstudiantes];
@@ -16,11 +16,11 @@ class Program
         // 2 y 3. Solicitud y validación de datos por cada estudiante
         for (int i = 0; i < totalEstudiantes; i++)
         {
-            Console.WriteLine($"\n--- Estudiante {i + 1} ---");
+            Console.WriteLine($"\n--- Estudiante {i + 1} de {totalEstudiantes} ---");
 
             // Validación del nombre usando un ciclo for (sin while ni do-while)
             string nombre = "";
-            for (bool nombreValido = false; !nombreValido;)
+            for (bool nombreValido = false; !nombreValido; )
             {
                 Console.Write("Ingrese el nombre: ");
                 nombre = Console.ReadLine();
@@ -38,7 +38,7 @@ class Program
 
             // Validación de la calificación usando un ciclo for (sin while ni do-while)
             double calificacion = 0;
-            for (bool notaValida = false; !notaValida;)
+            for (bool notaValida = false; !notaValida; )
             {
                 Console.Write("Ingrese la calificación (0.0 - 5.0): ");
                 string entrada = Console.ReadLine();
