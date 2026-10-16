@@ -16,7 +16,7 @@ namespace Clase_1
                 foreach (string linea in lineas)
                 {
                     string[] campos = linea.Split(',');
-                    Console.WriteLine($"Nombre: {campos[0]}, Nota: {campos[2]}, Sexo: {campos[4]}");
+                    Console.WriteLine($"Nombre: {campos[0]}, Nota: {campos[2]}, Sexo: {campos[3]}");
                 }
                 using (StreamWriter sw = new StreamWriter("D:\\estudiantes.csv", append: true))
                 {
